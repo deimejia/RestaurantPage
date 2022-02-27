@@ -8,7 +8,7 @@
   width: auto;
   height: 25px;
   transition: all 1s;
-  background-color: #ffcc33;
+  background: linear-gradient(#ffcc33, #6f5507);
 }
 
 /*object-fit:cover;*/
@@ -179,7 +179,7 @@ img.banner-ppal {
 /*SECCION PRE FOOTER*/
 #grillaDos {
   display: grid;
-  background-color: #663399;
+  background: linear-gradient(#7a569f, #663399);
   justify-items: center;
   align-items: center;
 }
