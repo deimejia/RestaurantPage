@@ -8,10 +8,8 @@
   width: auto;
   height: 25px;
   transition: all 1s;
-  background: linear-gradient(#ffcc33, #6f5507);
+  background-color: #ffcc33;
 }
-
-/*object-fit:cover;*/
 
 #padregrilla {
   display: grid;
@@ -30,13 +28,43 @@
 }
 .imgproduc {
   height: 170px;
+  transition: all 1s;
+}
+.imgproduc:hover {
+  transform: translate(0px, -6px);
 }
 .pproduct {
   height: 25%;
   padding: 12px;
   font-family: "Comfortaa";
 }
+.perso-nav {
+  padding: 0px;
+}
+.container-fluid {
+  padding: 0px;
+}
+.justify-content-center-center {
+  justify-content: center;
+}
+.hover-link {
+  padding-left: 8px !important;
+}
+.hover-link:hover {
+  background-color: #8653b9;
+  color: #ffffff !important;
+}
 
+.link-recetas {
+  color: #ffcc33;
+  text-decoration-line: none;
+  transition: all 0.2s;
+}
+
+.link-recetas:hover {
+  color: #ffcc33;
+  font-size: 110%;
+}
 /*ancho y largo automatico*/
 #hijogrid1 {
   display: table;
@@ -179,10 +207,14 @@ img.banner-ppal {
 /*SECCION PRE FOOTER*/
 #grillaDos {
   display: grid;
-  background: linear-gradient(#7a569f, #663399);
+  background: linear-gradient(to bottom, #8653b9, #200a36);
   justify-items: center;
   align-items: center;
 }
+a.rrss {
+  text-decoration: none;
+}
+
 /*sm*/
 @media only screen and (max-width: 600px) {
   #grillaDos {
@@ -392,7 +424,7 @@ footer {
   }
   .botOrd:hover {
     background-color: #ffcc33;
-    border-color: #ffcc33;
+    border: none;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -465,6 +497,7 @@ footer {
 
 .colorBoton:hover {
   background-color: #ffcc33;
+  border: none;
 }
 
 .sugerencias {
@@ -608,6 +641,10 @@ main {
 }
 header {
   grid-area: header1;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-shadow: #46494c;
 }
 #gridPpal {
   display: grid;
