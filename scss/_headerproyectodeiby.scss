@@ -1,0 +1,43 @@
+/*header*/
+/*header*/
+/*header*/
+
+header {
+  grid-area: header1;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-shadow: #46494c;
+
+  #cintilloSup {
+    width: auto;
+    height: 25px;
+    background-color: $backgroundcolorppal;
+  }
+  .perso-nav {
+    padding: 0px;
+  }
+
+  nav {
+    .container-fluid {
+      padding: 0px;
+    }
+
+    div {
+      .justify-content-center-center {
+        justify-content: center;
+      }
+      ul {
+        li {
+          .hover-link {
+            padding-left: 8px !important;
+            &:hover {
+              background-color: $backgroundcolorsecun;
+              color: $colorletrasecun !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

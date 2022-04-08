@@ -1,0 +1,201 @@
+/*MAIN PAG RECETAS */
+/*MAIN PAG RECETAS */
+/*MAIN PAG RECETAS */
+main {
+  #grillaCinco {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*sm PAG RECETAS*/
+/*sm PAG RECETAS*/
+/*sm PAG RECETAS*/
+@media only screen and (max-width: 600px) {
+  main {
+    #grillaCinco {
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 550px 550px 215px;
+      grid-template-areas:
+        "area1r"
+        "area2r"
+        "area3r"
+        "area4r";
+    }
+    div {
+      .h1Recetas {
+        grid-area: area1r;
+        text-align: center;
+      }
+      #recetaUno {
+        grid-area: area2r;
+        text-align: start;
+      }
+      div {
+        h3 {
+          margin-bottom: 18px;
+          padding: 0px 20px 0px 20px;
+        }
+        ul {
+          .ilReceta {
+            list-style: circle;
+          }
+        }
+        .pReceta1 {
+          padding: 0px 20px 0px 20px;
+          font-size: calc(0.7rem + 0.9vw);
+        }
+        h4 {
+          margin-top: 40px;
+          margin-bottom: 20px;
+          padding: 0px 20px 0px 20px;
+        }
+      }
+    }
+    div {
+      #recetaDos {
+        grid-area: area3r;
+        text-align: start;
+      }
+    }
+    div {
+      #imgDivRec {
+        grid-area: area4r;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/papassupremas2.png);
+        background-size: auto;
+        background-position: 85% 50%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+/*md PAG RECETAS*/
+/*md PAG RECETAS*/
+/*md PAG RECETAS*/
+@media only screen and (min-width: 600px) {
+  main {
+    #grillaCinco {
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 450px 450px 215px;
+      grid-template-areas:
+        "area1r"
+        "area2r"
+        "area3r"
+        "area4r";
+    }
+    div {
+      .h1Recetas {
+        grid-area: area1r;
+        text-align: center;
+      }
+      #recetaUno {
+        grid-area: area2r;
+        text-align: start;
+      }
+      div {
+        h3 {
+          margin-bottom: 18px;
+          padding: 0px 20px 0px 20px;
+        }
+        ul {
+          .ilReceta {
+            list-style: circle;
+          }
+        }
+        .pReceta1 {
+          padding: 0px 20px 0px 20px;
+        }
+        h4 {
+          margin-top: 40px;
+          margin-bottom: 20px;
+          padding: 0px 20px 0px 20px;
+        }
+      }
+    }
+    div {
+      #recetaDos {
+        grid-area: area3r;
+        text-align: start;
+      }
+    }
+    div {
+      #imgDivRec {
+        grid-area: area4r;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/papassupremas2.png);
+        background-size: auto;
+        background-position: 85% 50%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+/*lg PAG RECETAS*/
+/*lg PAG RECETAS*/
+/*lg PAG RECETAS*/
+@media only screen and (min-width: 992px) {
+  main {
+    #grillaCinco {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 550px 215px;
+      grid-template-areas:
+        "area1r area1r"
+        "area2r area3r"
+        "area4r area4r";
+    }
+    div {
+      .h1Recetas {
+        grid-area: area1r;
+        text-align: center;
+      }
+      #recetaUno {
+        grid-area: area2r;
+        text-align: start;
+      }
+      div {
+        h3 {
+          margin-bottom: 18px;
+          padding: 0px 20px 0px 20px;
+        }
+
+        .pReceta1 {
+          padding: 0px 20px 0px 20px;
+          font-family: $fontfamilydescrip;
+        }
+        h4 {
+          margin-top: 40px;
+          margin-bottom: 20px;
+          padding: 0px 20px 0px 20px;
+        }
+
+        ul {
+          .ilReceta {
+            list-style: circle;
+            font-family: $fontfamilydescrip;
+          }
+        }
+      }
+    }
+
+    div {
+      #recetaDos {
+        grid-area: area3r;
+        text-align: start;
+      }
+    }
+    div {
+      #imgDivRec {
+        grid-area: area4r;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/papassupremas2.png);
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/*body*/
+/*body*/
+/*body*/
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  #gridPpal {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "header1"
+      "main2"
+      "footer3";
+  }
+}

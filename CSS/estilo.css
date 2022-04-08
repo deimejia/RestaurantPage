@@ -1,303 +1,159 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-#cintilloSup {
-  width: auto;
-  height: 25px;
-  transition: all 1s;
-  background-color: #ffcc33;
-}
-
-#padregrilla {
-  display: grid;
-  background-color: #ffcc33;
-  justify-items: center;
-  align-items: center;
-}
-
-#hijogridp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 80%;
-}
-.imgproduc {
-  height: 170px;
-  transition: all 1s;
-}
-.imgproduc:hover {
-  transform: translate(0px, -6px);
-}
-.pproduct {
-  height: 25%;
-  padding: 12px;
-  font-family: "Comfortaa";
-}
-.perso-nav {
-  padding: 0px;
-}
-.container-fluid {
-  padding: 0px;
-}
-.justify-content-center-center {
-  justify-content: center;
-}
-.hover-link {
-  padding-left: 8px !important;
-}
-.hover-link:hover {
-  background-color: #8653b9;
-  color: #ffffff !important;
-}
-
-.link-recetas {
-  color: #ffcc33;
-  text-decoration-line: none;
-  transition: all 0.2s;
-}
-
-.link-recetas:hover {
-  color: #ffcc33;
-  font-size: 110%;
-}
-/*ancho y largo automatico*/
-#hijogrid1 {
-  display: table;
-  grid-area: area1;
-}
-#espacio {
-  grid-area: vacio;
-}
-
-#hijogrid2 {
-  display: table;
+/*body*/
+/*body*/
+/*body*/
+body {
   width: 100%;
-  height: 100%;
-  grid-area: area2;
-  background-color: white;
-}
+  min-height: 100vh; }
+  body #gridPpal {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header1" "main2" "footer3"; }
+
+/*header*/
+/*header*/
+/*header*/
+header {
+  grid-area: header1;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-shadow: #46494c; }
+  header #cintilloSup {
+    width: auto;
+    height: 25px;
+    background-color: #ffcc33; }
+  header .perso-nav {
+    padding: 0px; }
+  header nav .container-fluid {
+    padding: 0px; }
+  header nav div .justify-content-center-center {
+    justify-content: center; }
+  header nav div ul li .hover-link {
+    padding-left: 8px !important; }
+    header nav div ul li .hover-link:hover {
+      background-color: #663399;
+      color: white !important; }
+
+/*main INICIO*/
+/*main INICIO*/
+/*main INICIO*/
+main {
+  grid-area: main2; }
+  main #padregrilla {
+    display: grid;
+    background-color: #ffcc33;
+    justify-items: center;
+    align-items: center; }
+  main div .tableText, main div #hijogrid1, main div #hijogrid2 {
+    display: table;
+    width: 100%;
+    height: 100%; }
+  main div #hijogrid1 {
+    grid-area: area1; }
+  main div #hijogrid2 {
+    grid-area: area2;
+    background-color: #ffffff; }
+  main div #hijogridp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%; }
+  main div .imgproduc {
+    height: 170px;
+    transition: all 1s; }
+    main div .imgproduc:hover {
+      transform: translate(0px, -6px); }
+  main div .pproduct {
+    height: 25%;
+    padding: 12px;
+    font-family: "Comfortaa"; }
+
 #hijogrid7 {
   display: block;
+  grid-area: area7; }
 
-  grid-area: area7;
-}
+div .banner-ppal {
+  height: 10vmin; }
 
-img.banner-ppal {
-  height: 10vmin;
-}
-.pFooter {
-  padding-left: 16px;
-}
-
-/*sm*/
+/*sm pagina de inicio*/
+/*sm pagina de inicio*/
+/*sm pagina de inicio*/
 @media only screen and (max-width: 600px) {
-  #padregrilla {
+  main #padregrilla {
     grid-template-columns: 100%;
-    grid-template-rows: auto 80px 200px 200px 200px 200px 200px;
-    grid-template-areas:
-      "area1"
-      "area2"
-      "area3"
-      "area4"
-      "area5"
-      "area6"
-      "area7";
-  }
-
-  .h1Inicial {
+    grid-template-rows: auto 150px 200px 200px 200px 200px 200px;
+    grid-template-areas: "area1" "area2" "area3" "area4" "area5" "area6" "area7"; }
+  main div .h1Inicial {
+    padding: 3% 0 3% 0; }
+  main div .tituloIniS, main div .categorias {
     display: table-cell;
     vertical-align: middle;
-    font-size: 45px;
+    font-size: 30px;
     font-family: Cocogoose;
     text-align: center;
-    color: #46494c;
-    padding: 5% 0 5% 0;
-  }
+    color: #95190c; }
+  main div .categorias {
+    padding-top: 2%; }
+  main div .sup1 {
+    margin-top: -40px; } }
 
-  .categorias {
-    display: table-cell;
-    vertical-align: sub;
-    font-size: 40px;
-    font-family: Cocogoose;
-    text-align: center;
-    color: #95190c;
-    padding-top: 3%;
-  }
-
-  .sup1 {
-    margin-top: -15px;
-  }
-}
-/*md*/
+/*md pagina de inicio*/
+/*md pagina de inicio*/
+/*md pagina de inicio*/
 @media only screen and (min-width: 600px) {
-  #padregrilla {
+  main #padregrilla {
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto 180px 200px 200px 200px;
-    grid-template-areas:
-      "area1 area1"
-      "area2 area2"
-      "area3 area4"
-      "area5 area6"
-      "area7 area7";
-    row-gap: 0px 0px 10px 10px 0px;
-  }
-  .h1Inicial {
+    grid-template-rows: auto 250px 200px 200px 200px;
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area4" "area5 area6" "area7 area7";
+    row-gap: 0px 0px 10px 10px 0px; }
+  main div div .h1Inicial {
+    padding: 3% 0 3% 0; }
+  main div div .tituloIniM, main div div .categorias {
     display: table-cell;
     vertical-align: middle;
-    font-size: 70px;
-    font-family: Cocogoose;
-    text-align: center;
-    color: #46494c;
-    padding: 5% 0 5% 0;
-  }
-  .categorias {
-    display: table-cell;
-    vertical-align: sub;
     font-size: 60px;
     font-family: Cocogoose;
     text-align: center;
-    color: #95190c;
-    padding-top: 2%;
-  }
-  .sup2 {
-    margin-top: -150px;
-  }
-}
+    color: #95190c; }
+  main div div .categorias {
+    padding-top: 2%; }
+  main div .sup2 {
+    margin-top: -50px; } }
 
-/*lg*/
+/*lg pagina de inicio*/
+/*lg pagina de inicio*/
+/*lg pagina de inicio*/
 @media only screen and (min-width: 992px) {
-  #padregrilla {
+  main #padregrilla {
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto 250px 200px 200px;
-    grid-template-areas:
-      "area1 area1 area1 area1"
-      "area2 area2 area2 area2"
-      "area3 area4 area5 area6"
-      "area7 area7 area7 area7";
-  }
-  /*ancho y largo automatico*/
-  .h1Inicial {
+    grid-template-rows: auto 300px 200px 200px;
+    grid-template-areas: "area1 area1 area1 area1" "area2 area2 area2 area2" "area3 area4 area5 area6" "area7 area7 area7 area7"; }
+  main div div .h1Inicial {
+    padding: 3% 0 3% 0; }
+  main div div .tituloIniL, main div div .categorias {
     display: table-cell;
     vertical-align: middle;
-    font-size: 80px;
-    font-family: Cocogoose;
-    text-align: center;
-    color: #46494c;
-    padding: 5% 0 5% 0;
-  }
-  .categorias {
-    display: table-cell;
-    vertical-align: sub;
-    padding-top: 2%;
     font-size: 70px;
     font-family: Cocogoose;
     text-align: center;
-    color: #95190c;
-  }
-  .hijosproduc {
-    margin-top: -150px;
-  }
-}
+    color: #95190c; }
+  main div div .categorias {
+    padding-top: 2%; }
+  main div .hijosproduc {
+    margin-top: -90px; } }
 
 /*SECCION PRE FOOTER*/
-#grillaDos {
-  display: grid;
-  background: linear-gradient(to bottom, #8653b9, #200a36);
-  justify-items: center;
-  align-items: center;
-}
-a.rrss {
-  text-decoration: none;
-}
-
-/*sm*/
-@media only screen and (max-width: 600px) {
-  #grillaDos {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 60px;
-    grid-template-areas:
-      "area1pf area2pf"
-      "area3pf area3pf";
-  }
-  #hijoGrid1pf {
-    grid-area: area1pf;
-    color: white;
-    text-align: start;
-  }
-  #hijoGrid2pf {
-    grid-area: area3pf;
-  }
-  #hijoGrid3pf {
-    grid-area: area2pf;
-    color: white;
-    text-align: end;
-  }
-  .pFooter {
-    margin: 0px 0px 0px 0px;
-    font-size: 12px;
-    padding-left: 8px;
-  }
-}
-/*md*/
-@media only screen and (min-width: 600px) {
-  #grillaDos {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 150px 60px;
-    grid-template-areas:
-      "area1pf area2pf"
-      "area3pf area3pf";
-  }
-  #hijoGrid1pf {
-    grid-area: area1pf;
-    color: white;
-    text-align: start;
-  }
-  #hijoGrid2pf {
-    grid-area: area3pf;
-  }
-  #hijoGrid3pf {
-    grid-area: area2pf;
-    color: white;
-    text-align: end;
-  }
-  .pFooter {
-    margin: 0px 0px 0px 0px;
-    font-size: 14px;
-  }
-}
-
-/*lg*/
-@media only screen and (min-width: 992px) {
-  #grillaDos {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px;
-    grid-template-areas: "area1pf area2pf area3pf";
-  }
-  #hijoGrid1pf {
-    grid-area: area1pf;
-    color: white;
-    text-align: start;
-  }
-  #hijoGrid2pf {
-    grid-area: area2pf;
-  }
-  #hijoGrid3pf {
-    grid-area: area3pf;
-    color: white;
-    text-align: end;
-  }
-
-  .pFooter {
-    margin: 0px 0px 0px 0px;
-    font-size: 16px;
-  }
-}
-
+/*SECCION PRE FOOTER*/
+/*SECCION PRE FOOTER*/
 footer {
   display: block;
   text-align: center;
@@ -305,511 +161,464 @@ footer {
   background-color: #5e86af;
   width: 100%;
   height: auto;
-}
-.bi-whatsapp {
-  color: #ffffff;
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-}
-.bi-facebook {
-  color: #ffffff;
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-}
-.bi-telephone {
-  color: #ffffff;
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-}
+  grid-area: footer3;
+  align-self: flex-end; }
+  footer #grillaDos {
+    display: grid;
+    background: linear-gradient(to bottom, #8653b9, #200a36);
+    justify-items: center;
+    align-items: center; }
+  footer div div .rrss {
+    text-decoration: none; }
+  footer div div a .bi-whatsapp {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px; }
+  footer div div a .bi-facebook {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px; }
+  footer div div a .bi-telephone {
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px; }
+  footer div div p .link-recetas {
+    color: #ffcc33;
+    text-decoration-line: none;
+    transition: all 0.2s; }
+    footer div div p .link-recetas:hover {
+      color: #ffcc33;
+      font-size: 110%; }
+  footer #divFooter {
+    background-color: #46494c; }
+
+/*sm footer*/
+/*sm footer*/
+/*sm footer*/
+@media only screen and (max-width: 600px) {
+  #grillaDos {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 60px;
+    grid-template-areas: "area1pf area2pf" "area3pf area3pf"; }
+  .pFooter {
+    margin: 0px 0px 0px 0px;
+    font-size: 12px;
+    padding-left: 8px; }
+  #hijoGrid1pf {
+    grid-area: area1pf;
+    color: white;
+    text-align: start; }
+  #hijoGrid2pf {
+    grid-area: area3pf; }
+  #hijoGrid3pf {
+    grid-area: area2pf;
+    color: white;
+    text-align: end; } }
+
+/*md footer*/
+/*md footer*/
+/*md footer*/
+@media only screen and (min-width: 600px) {
+  #grillaDos {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 60px;
+    grid-template-areas: "area1pf area2pf" "area3pf area3pf"; }
+  .pFooter {
+    margin: 0px 0px 0px 0px;
+    font-size: 14px;
+    padding-left: 16px; }
+  #hijoGrid1pf {
+    grid-area: area1pf;
+    color: white;
+    text-align: start; }
+  #hijoGrid2pf {
+    grid-area: area3pf; }
+  #hijoGrid3pf {
+    grid-area: area2pf;
+    color: white;
+    text-align: end; } }
+
+/*lg footer*/
+/*lg footer*/
+/*lg footer*/
+@media only screen and (min-width: 992px) {
+  #grillaDos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: "area1pf area2pf area3pf"; }
+  .pFooter {
+    margin: 0px 0px 0px 0px;
+    font-size: 16px;
+    padding-left: 16px; }
+  #hijoGrid1pf {
+    grid-area: area1pf;
+    color: white;
+    text-align: start; }
+  #hijoGrid3pf {
+    grid-area: area3pf;
+    color: white;
+    text-align: start; }
+  #hijoGrid2pf {
+    grid-area: area2pf; } }
 
 /*MAIN PAG ORDENAR CHECK*/
-
-#grillaTres {
+/*MAIN PAG ORDENAR CHECK*/
+/*MAIN PAG ORDENAR CHECK*/
+main #grillaTres {
   display: grid;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
+main div div .botOrd {
+  background-color: #663399;
+  border-color: #663399; }
+  main div div .botOrd:hover {
+    background-color: #ffcc33;
+    border: none; }
+
+/*sm PAG ORDENAR CHECK*/
+/*sm PAG ORDENAR CHECK*/
+/*sm PAG ORDENAR CHECK*/
 @media only screen and (max-width: 600px) {
-  #grillaTres {
+  main #grillaTres {
     grid-template-columns: 100%;
     grid-template-rows: auto 200px auto 200px auto 200px auto 200px 200px;
-    grid-template-areas:
-      "area1ord"
-      "area2ord"
-      "area3ord"
-      "area4ord"
-      "area5ord"
-      "area6ord"
-      "area7ord"
-      "area8ord"
-      "area9ord";
-  }
-
-  #hamOrd {
+    grid-template-areas: "area1ord" "area2ord" "area3ord" "area4ord" "area5ord" "area6ord" "area7ord" "area8ord" "area9ord"; }
+  main div #hamOrd {
     display: flex;
     justify-content: center;
-    grid-area: area1ord;
-  }
-  #papOrd {
+    grid-area: area1ord; }
+  main div #papOrd {
     grid-area: area3ord;
     display: flex;
-    justify-content: center;
-  }
-  #tacOrd {
+    justify-content: center; }
+  main div #tacOrd {
     grid-area: area5ord;
     display: flex;
-    justify-content: center;
-  }
-  #chuOrd {
+    justify-content: center; }
+  main div #chuOrd {
     grid-area: area7ord;
     display: flex;
-    justify-content: center;
-  }
-  #imgOrd {
+    justify-content: center; }
+  main div #imgOrd {
     display: flex;
-    justify-content: center;
-  }
-}
+    justify-content: center; } }
 
+/*md PAG ORDENAR CHECK*/
+/*md PAG ORDENAR CHECK*/
+/*md PAG ORDENAR CHECK*/
 @media only screen and (min-width: 600px) {
-  #grillaTres {
+  main #grillaTres {
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas:
-      "area1ord area2ord"
-      "area3ord area4ord"
-      "area5ord area6ord"
-      "area7ord area8ord"
-      "area9ord area9ord";
-  }
-  #botonPedido {
-    grid-area: area9ord;
-  }
-  #hamOrd {
+    grid-template-areas: "area1ord area2ord" "area3ord area4ord" "area5ord area6ord" "area7ord area8ord" "area9ord area9ord"; }
+  main div #botonPedido {
+    grid-area: area9ord; }
+  main div #hamOrd {
     grid-area: area1ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #papOrd {
+    margin-right: 50px; }
+  main div #papOrd {
     grid-area: area3ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #tacOrd {
+    margin-right: 50px; }
+  main div #tacOrd {
     grid-area: area5ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #chuOrd {
+    margin-right: 50px; }
+  main div #chuOrd {
     grid-area: area7ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #imgOrd {
+    margin-right: 50px; }
+  main div #imgOrd {
     display: flex;
     justify-content: start;
-    margin-left: 50px;
-  }
-  .botOrd {
-    background-color: #663399;
-    border-color: #663399;
-  }
-  .botOrd:hover {
-    background-color: #ffcc33;
-    border: none;
-  }
-}
-@media only screen and (min-width: 992px) {
-  #grillaTres {
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-areas:
-      "area1ord area2ord"
-      "area3ord area4ord"
-      "area5ord area6ord"
-      "area7ord area8ord"
-      "area9ord area9ord";
-  }
-  #botonPedido {
-    grid-area: area9ord;
-  }
-  #hamOrd {
-    grid-area: area1ord;
-    display: flex;
-    justify-content: end;
-    margin-right: 50px;
-  }
+    margin-left: 50px; } }
 
-  #papOrd {
+/*lg PAG ORDENAR CHECK*/
+/*lg PAG ORDENAR CHECK*/
+/*lg PAG ORDENAR CHECK*/
+@media only screen and (min-width: 992px) {
+  main #grillaTres {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-areas: "area1ord area2ord" "area3ord area4ord" "area5ord area6ord" "area7ord area8ord" "area9ord area9ord"; }
+  main div #botonPedido {
+    grid-area: area9ord; }
+  main div #hamOrd {
+    grid-area: area1ord;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px; }
+  main div #papOrd {
     grid-area: area3ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #tacOrd {
+    margin-right: 50px; }
+  main div #tacOrd {
     grid-area: area5ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #chuOrd {
+    margin-right: 50px; }
+  main div #chuOrd {
     grid-area: area7ord;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
-  }
-  #imgOrd {
+    margin-right: 50px; }
+  main div #imgOrd {
     display: flex;
     justify-content: start;
-    margin-left: 50px;
-  }
-}
+    margin-left: 50px; } }
 
 /*MAIN PAG SUGERENCIAS FORM*/
-
-#divFlexPpal {
+/*MAIN PAG SUGERENCIAS FORM*/
+/*MAIN PAG SUGERENCIAS FORM*/
+main #divFlexPpal {
   display: flex;
-
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
 
-#formsugerencias {
+main div #formsugerencias {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 500px;
-  height: 500px;
-}
-.colorBoton {
+  height: 500px; }
+
+main div div div .colorBoton {
   background-color: #663399;
-  border-color: #663399;
-}
-
-.colorBoton:hover {
-  background-color: #ffcc33;
-  border: none;
-}
-
-.sugerencias {
-  text-align: center;
-  margin: 20px 0 20px 0;
-}
+  border-color: #663399; }
+  main div div div .colorBoton:hover {
+    background-color: #ffcc33;
+    border: none; }
 
 /*MAIN PAG CONOCENOS FORM*/
-#grillaCuatro {
+/*MAIN PAG CONOCENOS FORM*/
+/*MAIN PAG CONOCENOS FORM*/
+main #grillaCuatro {
   display: grid;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
+/*sm PAG CONOCENOS FORM*/
+/*sm PAG CONOCENOS FORM*/
+/*sm PAG CONOCENOS FORM*/
 @media only screen and (max-width: 600px) {
-  #grillaCuatro {
+  main #grillaCuatro {
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px 200px 200px;
-    grid-template-areas:
-      "area1c"
-      "area2c"
-      "area3c"
-      "area4c";
-  }
-  .h1Conocenos {
+    grid-template-areas: "area1c" "area2c" "area3c" "area4c"; }
+  main div .h1Conocenos {
     grid-area: area1c;
-    text-align: center;
-  }
-  .pConocenos1 {
+    text-align: center; }
+  main div .pConocenos1 {
     grid-area: area2c;
-    text-align: center;
+    text-align: start;
     font-size: 16px;
-
-    padding: 0px 20px 0px 20px;
-  }
-  .pConocenos2 {
+    padding: 0px 20px 0px 20px; }
+  main div .pConocenos2 {
     grid-area: area3c;
-    text-align: center;
+    text-align: start;
     font-size: 16px;
-
-    padding: 0px 20px 0px 20px;
-  }
-  #imgDivConoc {
+    padding: 0px 20px 0px 20px; }
+  main div #imgDivConoc {
     grid-area: area4c;
     width: 100%;
     height: 100%;
     background: url(../imagenes/hamb.png);
     background-size: auto;
     background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }
 
+/*md PAG CONOCENOS FORM*/
+/*md PAG CONOCENOS FORM*/
+/*md PAG CONOCENOS FORM*/
 @media only screen and (min-width: 600px) {
-  #grillaCuatro {
+  main #grillaCuatro {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-      "area1c area1c"
-      "area2c area3c"
-      "area4c area4c";
-  }
-  .h1Conocenos {
+    grid-template-rows: 200px 200px 260px;
+    grid-template-areas: "area1c area1c" "area2c area3c" "area4c area4c"; }
+  main div .h1Conocenos {
     grid-area: area1c;
-    text-align: center;
-  }
-  .pConocenos1 {
+    text-align: center; }
+  main div .pConocenos1 {
     grid-area: area2c;
     text-align: start;
     font-size: 16px;
-
-    padding: 0px 20px 0px 20px;
-  }
-  .pConocenos2 {
+    font-family: "Comfortaa";
+    padding: 0px 20px 0px 20px; }
+  main div .pConocenos2 {
     grid-area: area3c;
     text-align: start;
     font-size: 16px;
-
-    padding: 0px 20px 0px 20px;
-  }
-  #imgDivConoc {
+    font-family: "Comfortaa";
+    padding: 0px 20px 0px 20px; }
+  main div #imgDivConoc {
     grid-area: area4c;
     width: 100%;
     height: 100%;
     background: url(../imagenes/hamb.png);
     background-size: auto;
     background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }
 
+/*lg PAG CONOCENOS FORM*/
+/*lg PAG CONOCENOS FORM*/
+/*lg PAG CONOCENOS FORM*/
 @media only screen and (min-width: 992px) {
-  #grillaCuatro {
+  main #grillaCuatro {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 200px 200px 215px;
-    grid-template-areas:
-      "area1c area1c"
-      "area2c area3c"
-      "area4c area4c";
-  }
-  .h1Conocenos {
+    grid-template-rows: 200px 200px 280px;
+    grid-template-areas: "area1c area1c" "area2c area3c" "area4c area4c";
+    min-height: fit-content; }
+  main div .h1Conocenos {
     grid-area: area1c;
-    text-align: center;
-  }
-  .pConocenos1 {
+    text-align: center; }
+  main div .pConocenos1 {
     grid-area: area2c;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
-  }
-  .pConocenos2 {
+    text-align: start;
+    font-family: "Comfortaa";
+    padding: 0px 20px 0px 20px; }
+  main div .pConocenos2 {
     grid-area: area3c;
-    text-align: center;
-    padding: 0px 20px 0px 20px;
-  }
-  #imgDivConoc {
+    text-align: start;
+    font-family: "Comfortaa";
+    padding: 0px 20px 0px 20px; }
+  main div #imgDivConoc {
     grid-area: area4c;
     width: 100%;
     height: 100%;
     background: url(../imagenes/hamb.png);
     background-size: auto;
     background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
-body {
-  width: 100%;
-
-  min-height: 100vh;
-}
-footer {
-  grid-area: footer3;
-  align-self: flex-end;
-}
-#divFooter {
-  background-color: #46494c;
-}
-main {
-  grid-area: main2;
-  height: 100%;
-}
-header {
-  grid-area: header1;
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  box-shadow: #46494c;
-}
-#gridPpal {
-  display: grid;
-  min-height: 100vh;
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "header1"
-    "main2"
-    "footer3";
-}
+    background-repeat: no-repeat; } }
 
 /*MAIN PAG RECETAS */
-
-#grillaCinco {
+/*MAIN PAG RECETAS */
+/*MAIN PAG RECETAS */
+main #grillaCinco {
   display: grid;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
+
+/*sm PAG RECETAS*/
+/*sm PAG RECETAS*/
+/*sm PAG RECETAS*/
 @media only screen and (max-width: 600px) {
-  #grillaCinco {
+  main #grillaCinco {
     grid-template-columns: 100%;
     grid-template-rows: 100px 550px 550px 215px;
-    grid-template-areas:
-      "area1r"
-      "area2r"
-      "area3r"
-      "area4r";
-  }
-  .h1Recetas {
+    grid-template-areas: "area1r" "area2r" "area3r" "area4r"; }
+  main div .h1Recetas {
     grid-area: area1r;
-    text-align: center;
-  }
-
-  h3 {
+    text-align: center; }
+  main div #recetaUno {
+    grid-area: area2r;
+    text-align: start; }
+  main div div h3 {
     margin-bottom: 18px;
+    padding: 0px 20px 0px 20px; }
+  main div div ul .ilReceta {
+    list-style: circle; }
+  main div div .pReceta1 {
     padding: 0px 20px 0px 20px;
-  }
-  h4 {
+    font-size: calc(0.7rem + 0.9vw); }
+  main div div h4 {
     margin-top: 40px;
     margin-bottom: 20px;
-    padding: 0px 20px 0px 20px;
-  }
-  #recetaUno {
-    grid-area: area2r;
-    text-align: start;
-  }
-  .pReceta1 {
-    padding: 0px 20px 0px 20px;
-    font-size: calc(0.7rem + 0.9vw);
-  }
-  #recetaDos {
+    padding: 0px 20px 0px 20px; }
+  main div #recetaDos {
     grid-area: area3r;
-    text-align: start;
-  }
-
-  .ilReceta {
-    list-style: circle;
-  }
-  #imgDivRec {
+    text-align: start; }
+  main div #imgDivRec {
     grid-area: area4r;
     width: 100%;
     height: 100%;
-    background: url(../imagenes/papas\ supremas.png);
+    background: url(../imagenes/papassupremas2.png);
     background-size: auto;
     background-position: 85% 50%;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }
 
+/*md PAG RECETAS*/
+/*md PAG RECETAS*/
+/*md PAG RECETAS*/
 @media only screen and (min-width: 600px) {
-  #grillaCinco {
+  main #grillaCinco {
     grid-template-columns: 100%;
     grid-template-rows: 100px 450px 450px 215px;
-    grid-template-areas:
-      "area1r"
-      "area2r"
-      "area3r"
-      "area4r";
-  }
-  .h1Recetas {
+    grid-template-areas: "area1r" "area2r" "area3r" "area4r"; }
+  main div .h1Recetas {
     grid-area: area1r;
-    text-align: center;
-  }
-
-  h3 {
+    text-align: center; }
+  main div #recetaUno {
+    grid-area: area2r;
+    text-align: start; }
+  main div div h3 {
     margin-bottom: 18px;
-    padding: 0px 20px 0px 20px;
-  }
-  h4 {
+    padding: 0px 20px 0px 20px; }
+  main div div ul .ilReceta {
+    list-style: circle; }
+  main div div .pReceta1 {
+    padding: 0px 20px 0px 20px; }
+  main div div h4 {
     margin-top: 40px;
     margin-bottom: 20px;
-    padding: 0px 20px 0px 20px;
-  }
-  #recetaUno {
-    grid-area: area2r;
-    text-align: start;
-  }
-  .pReceta1 {
-    padding: 0px 20px 0px 20px;
-  }
-  #recetaDos {
+    padding: 0px 20px 0px 20px; }
+  main div #recetaDos {
     grid-area: area3r;
-    text-align: start;
-  }
-
-  .ilReceta {
-    list-style: circle;
-  }
-  #imgDivRec {
+    text-align: start; }
+  main div #imgDivRec {
     grid-area: area4r;
     width: 100%;
     height: 100%;
-    background: url(../imagenes/papas\ supremas.png);
+    background: url(../imagenes/papassupremas2.png);
     background-size: auto;
     background-position: 85% 50%;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }
 
+/*lg PAG RECETAS*/
+/*lg PAG RECETAS*/
+/*lg PAG RECETAS*/
 @media only screen and (min-width: 992px) {
-  #grillaCinco {
+  main #grillaCinco {
     grid-template-columns: 50% 50%;
     grid-template-rows: 200px 550px 215px;
-    grid-template-areas:
-      "area1r area1r"
-      "area2r area3r"
-      "area4r area4r";
-  }
-  .h1Recetas {
+    grid-template-areas: "area1r area1r" "area2r area3r" "area4r area4r"; }
+  main div .h1Recetas {
     grid-area: area1r;
-    text-align: center;
-  }
-
-  h3 {
+    text-align: center; }
+  main div #recetaUno {
+    grid-area: area2r;
+    text-align: start; }
+  main div div h3 {
     margin-bottom: 18px;
+    padding: 0px 20px 0px 20px; }
+  main div div .pReceta1 {
     padding: 0px 20px 0px 20px;
-  }
-  h4 {
+    font-family: "Comfortaa"; }
+  main div div h4 {
     margin-top: 40px;
     margin-bottom: 20px;
-    padding: 0px 20px 0px 20px;
-  }
-  #recetaUno {
-    grid-area: area2r;
-    text-align: start;
-  }
-  .pReceta1 {
-    padding: 0px 20px 0px 20px;
-  }
-  #recetaDos {
-    grid-area: area3r;
-    text-align: start;
-  }
-
-  .ilReceta {
+    padding: 0px 20px 0px 20px; }
+  main div div ul .ilReceta {
     list-style: circle;
-  }
-  #imgDivRec {
+    font-family: "Comfortaa"; }
+  main div #recetaDos {
+    grid-area: area3r;
+    text-align: start; }
+  main div #imgDivRec {
     grid-area: area4r;
     width: 100%;
     height: 100%;
-    background: url(../imagenes/hamb.png);
+    background: url(../imagenes/papassupremas2.png);
     background-size: auto;
     background-position: center;
-    background-repeat: no-repeat;
-  }
-}
+    background-repeat: no-repeat; } }

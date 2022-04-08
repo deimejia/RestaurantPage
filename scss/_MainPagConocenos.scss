@@ -1,0 +1,142 @@
+/*MAIN PAG CONOCENOS FORM*/
+/*MAIN PAG CONOCENOS FORM*/
+/*MAIN PAG CONOCENOS FORM*/
+main {
+  #grillaCuatro {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*sm PAG CONOCENOS FORM*/
+/*sm PAG CONOCENOS FORM*/
+/*sm PAG CONOCENOS FORM*/
+@media only screen and (max-width: 600px) {
+  main {
+    #grillaCuatro {
+      grid-template-columns: 100%;
+      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-areas:
+        "area1c"
+        "area2c"
+        "area3c"
+        "area4c";
+    }
+    div {
+      .h1Conocenos {
+        grid-area: area1c;
+        text-align: center;
+      }
+      .pConocenos1 {
+        grid-area: area2c;
+        text-align: start;
+        font-size: 16px;
+
+        padding: 0px 20px 0px 20px;
+      }
+      .pConocenos2 {
+        grid-area: area3c;
+        text-align: start;
+        font-size: 16px;
+
+        padding: 0px 20px 0px 20px;
+      }
+      #imgDivConoc {
+        grid-area: area4c;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/hamb.png);
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+/*md PAG CONOCENOS FORM*/
+/*md PAG CONOCENOS FORM*/
+/*md PAG CONOCENOS FORM*/
+@media only screen and (min-width: 600px) {
+  main {
+    #grillaCuatro {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 200px 260px;
+      grid-template-areas:
+        "area1c area1c"
+        "area2c area3c"
+        "area4c area4c";
+    }
+    div {
+      .h1Conocenos {
+        grid-area: area1c;
+        text-align: center;
+      }
+      .pConocenos1 {
+        grid-area: area2c;
+        text-align: start;
+        font-size: 16px;
+        font-family: $fontfamilydescrip;
+        padding: 0px 20px 0px 20px;
+      }
+      .pConocenos2 {
+        grid-area: area3c;
+        text-align: start;
+        font-size: 16px;
+        font-family: $fontfamilydescrip;
+        padding: 0px 20px 0px 20px;
+      }
+      #imgDivConoc {
+        grid-area: area4c;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/hamb.png);
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+/*lg PAG CONOCENOS FORM*/
+/*lg PAG CONOCENOS FORM*/
+/*lg PAG CONOCENOS FORM*/
+@media only screen and (min-width: 992px) {
+  main {
+    #grillaCuatro {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 200px 280px;
+      grid-template-areas:
+        "area1c area1c"
+        "area2c area3c"
+        "area4c area4c";
+      min-height: fit-content;
+    }
+    div {
+      .h1Conocenos {
+        grid-area: area1c;
+        text-align: center;
+      }
+      .pConocenos1 {
+        grid-area: area2c;
+        text-align: start;
+        font-family: $fontfamilydescrip;
+        padding: 0px 20px 0px 20px;
+      }
+      .pConocenos2 {
+        grid-area: area3c;
+        text-align: start;
+        font-family: $fontfamilydescrip;
+        padding: 0px 20px 0px 20px;
+      }
+      #imgDivConoc {
+        grid-area: area4c;
+        width: 100%;
+        height: 100%;
+        background: url(../imagenes/hamb.png);
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

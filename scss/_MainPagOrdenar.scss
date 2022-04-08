@@ -1,0 +1,174 @@
+/*MAIN PAG ORDENAR CHECK*/
+/*MAIN PAG ORDENAR CHECK*/
+/*MAIN PAG ORDENAR CHECK*/
+main {
+  #grillaTres {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  div {
+    div {
+      .botOrd {
+        background-color: $backgroundcolorsecun;
+        border-color: $bordercolorbutton1;
+        &:hover {
+          background-color: $backgroundcolorppal;
+          border: none;
+        }
+      }
+    }
+  }
+}
+/*sm PAG ORDENAR CHECK*/
+/*sm PAG ORDENAR CHECK*/
+/*sm PAG ORDENAR CHECK*/
+@media only screen and (max-width: 600px) {
+  main {
+    #grillaTres {
+      grid-template-columns: 100%;
+      grid-template-rows: auto 200px auto 200px auto 200px auto 200px 200px;
+      grid-template-areas:
+        "area1ord"
+        "area2ord"
+        "area3ord"
+        "area4ord"
+        "area5ord"
+        "area6ord"
+        "area7ord"
+        "area8ord"
+        "area9ord";
+    }
+
+    div {
+      #hamOrd {
+        display: flex;
+        justify-content: center;
+        grid-area: area1ord;
+      }
+
+      #papOrd {
+        grid-area: area3ord;
+        display: flex;
+        justify-content: center;
+      }
+      #tacOrd {
+        grid-area: area5ord;
+        display: flex;
+        justify-content: center;
+      }
+      #chuOrd {
+        grid-area: area7ord;
+        display: flex;
+        justify-content: center;
+      }
+      #imgOrd {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+/*md PAG ORDENAR CHECK*/
+/*md PAG ORDENAR CHECK*/
+/*md PAG ORDENAR CHECK*/
+@media only screen and (min-width: 600px) {
+  main {
+    #grillaTres {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 200px 200px 200px 200px;
+      grid-template-areas:
+        "area1ord area2ord"
+        "area3ord area4ord"
+        "area5ord area6ord"
+        "area7ord area8ord"
+        "area9ord area9ord";
+    }
+    div {
+      #botonPedido {
+        grid-area: area9ord;
+      }
+      #hamOrd {
+        grid-area: area1ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #papOrd {
+        grid-area: area3ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #tacOrd {
+        grid-area: area5ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #chuOrd {
+        grid-area: area7ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #imgOrd {
+        display: flex;
+        justify-content: start;
+        margin-left: 50px;
+      }
+    }
+  }
+}
+/*lg PAG ORDENAR CHECK*/
+/*lg PAG ORDENAR CHECK*/
+/*lg PAG ORDENAR CHECK*/
+@media only screen and (min-width: 992px) {
+  main {
+    #grillaTres {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 200px 200px 200px 200px 200px;
+      grid-template-areas:
+        "area1ord area2ord"
+        "area3ord area4ord"
+        "area5ord area6ord"
+        "area7ord area8ord"
+        "area9ord area9ord";
+    }
+    div {
+      #botonPedido {
+        grid-area: area9ord;
+      }
+      #hamOrd {
+        grid-area: area1ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+
+      #papOrd {
+        grid-area: area3ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #tacOrd {
+        grid-area: area5ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #chuOrd {
+        grid-area: area7ord;
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+      }
+      #imgOrd {
+        display: flex;
+        justify-content: start;
+        margin-left: 50px;
+      }
+    }
+  }
+}
